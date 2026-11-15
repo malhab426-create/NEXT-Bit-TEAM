@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-
 :root{
   --bg: #0b0e14;
   --surface: #151a24;
@@ -27,7 +26,6 @@
   --radius: 12px;
 }
 
-
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;scroll-padding-top:80px;}
 body{
@@ -42,7 +40,6 @@ a{color:inherit;text-decoration:none;}
 img, svg{display:block;}
 section{padding:100px 24px;position:relative;}
 .container{max-width:1140px;margin:0 auto;}
-
 
 .section-title{
   font-size:clamp(1.8rem,4vw,2.5rem);
@@ -70,7 +67,6 @@ section{padding:100px 24px;position:relative;}
 }
 .icon-lg { width: 32px; height: 32px; }
 
-
 nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   background:rgba(11,14,20,.9);
@@ -81,7 +77,14 @@ nav{
   max-width:1140px;margin:0 auto;padding:16px 24px;
   display:flex;align-items:center;justify-content:space-between;
 }
-.logo{display:flex;flex-direction:column;align-items:flex-start;line-height:1.1;}
+
+/* اللوغو النصي */
+.logo{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  line-height:1.1;
+}
 .logo-text{font-size:1.5rem;font-weight:900;letter-spacing:-0.5px;color:#fff;font-family: Arial, sans-serif;}
 .logo-text span{color:var(--primary);}
 .logo-sub{font-size:0.7rem;color:var(--muted);letter-spacing:4px;font-weight:700;margin-top:2px;font-family: Arial, sans-serif;}
@@ -111,9 +114,19 @@ nav{
 }
 .text-primary { color: var(--primary); }
 .hero-desc{
-  font-size:clamp(1rem,2vw,1.15rem);color:var(--muted);max-width:700px;margin:0 auto 40px;
+  font-size:clamp(1rem,2vw,1.15rem);color:var(--muted);max-width:700px;margin:0 auto 20px;
 }
 .hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+/* ستايل اسم المهندسة المشرفة */
+.hero-supervisor {
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: var(--primary);
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
 
 .btn{
   padding:12px 28px;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;border:none;
@@ -182,7 +195,7 @@ nav{
 }
 .service-card:hover{border-color:var(--border); background: var(--surface-hover);}
 .service-icon{
-  width:56px;height:56px;border-radius:12px;background:rgba(255,123,147,.1);
+  width:64px;height:64px;border-radius:12px;background:rgba(255,123,147,.1);
   color:var(--primary);display:grid;place-items:center;margin:0 auto 20px;
 }
 .service-card h3{font-size:1.2rem;font-weight:700;margin-bottom:12px; direction: ltr;}
@@ -285,6 +298,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   .goals-container::before{right:11px;}
   .goal-item{padding-right:36px;}
   .goal-item::before{right:5px;}
+  .logo-text { font-size: 1.3rem; }
 }
 @media (max-width:480px){
   .footer-grid{grid-template-columns:1fr;}
@@ -302,6 +316,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
       <div class="logo-text">NEXT <span>Bit</span></div>
       <div class="logo-sub">TEAM</div>
     </a>
+    
     <div class="nav-links" id="navLinks">
       <a href="#philosophy">فلسفتنا</a>
       <a href="#journey">رحلتنا</a>
@@ -327,9 +342,16 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
       نحن <span class="text-primary">لسنا مجرد أشخاص</span><br>
       نحن فريق حقيقي
     </h1>
+    
     <p class="hero-desc">
-      بيجمعنا هدف واحد، مآمنين بفكرة واحدة، ومستعدين نمشي مع بعضنا حتى نوصل لنتيجة مشتركة. ماعنا رئيس ومرؤوس، كلنا إيد وحدة وروح وحدة وقلب واحد.
+      يجمعنا هدف واحد، مآمنين بفكرة واحدة، ومستعدين نمشي مع بعضنا حتى نوصل لنتيجة مشتركة. ماعنا رئيس ومرؤوس، كلنا إيد وحدة وروح وحدة وقلب واحد.
     </p>
+    
+
+    <div class="hero-supervisor reveal">
+      بأشراف المهندسة القديرة: سوسن صفصاف
+    </div>
+
     <div class="hero-buttons">
       <a href="#philosophy" class="btn btn-primary">تعرّف علينا أكثر</a>
       <a href="#contact" class="btn btn-outline">انضم إلينا</a>
@@ -340,7 +362,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 <section id="stats">
   <div class="stats-grid">
     <div class="stat">
-      <h3 data-count="20">0</h3>
+      <h3 data-count="21">0</h3>
       <p>عضو في الفريق</p>
     </div>
     <div class="stat">
@@ -361,7 +383,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 <section id="philosophy">
   <div class="container">
     <h2 class="section-title reveal">شو يعني فريق؟</h2>
-    <p class="section-sub reveal">هل الفريق مجموعة أشخاص وكل واحد إله مهمة بنفذها وخلص؟</p>
+    <p class="section-sub reveal">هل الفريق مجموعة أشخاص وكل شخص إله مهمة بنفذها وخلص؟</p>
     
     <div class="philosophy-content reveal">
       <p><strong>طبعاً الغالبية رح تقول لا.</strong> لهيك نحن فريق حقيقي بيجمعنا هدف واحد، مآمنين بفكرة واحدة، ومستعدين نمشي مع بعضنا حتى نوصل لنتيجة مشتركة.</p>
@@ -394,7 +416,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
           <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4L12 14.01l-3-3"/></svg>
           نبدأ من الصفر
         </h3>
-        <p>أغلبنا طلاب وماعندنا خبرة عملية حقيقية في سوق العمل. مو عيب هاد الشي، بالعكس هاد دافع النا.</p>
+        <p>أغلبنا طلاب وماعندنا خبرة عملية حقيقية في سوق العمل.  هاد الشي مو عائق، بالعكس هاد دافع النا.</p>
         <p>مو عيب انه مانعرف نستخدم تقنية معينة أو نطلب مساعدة أو حتى نتعلم. كل الناس الناجحة بلشت من الصفر.</p>
       </div>
     </div>
@@ -483,7 +505,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
     </div>
 
     <div class="highlight-box reveal" style="text-align:center; margin-top:50px; border-right:none; border:1px solid var(--border); border-radius:var(--radius);">
-      <h3>رحلتنا لسا بتبلش</h3>
+      <h3>رحلتنا لسا ما بلشت</h3>
       <p>مارح قول انه هاد كله بيوم واحد، لا. كل يوم منقرب خطوة. هدفنا البعيد شركة كاملة يكون إلها اسم ويكون لكل شخص أثر ومساهمة حقيقية. وإن شاء الله مستقبلاً منرجع منتذكر هاد الاجتماع ومنقول: <strong>نحن من هون بلشنا.</strong></p>
     </div>
   </div>
@@ -495,25 +517,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
     <p class="section-sub reveal">حلول متكاملة من الفكرة إلى الإطلاق</p>
     <div class="services-grid">
       
+      <!-- Web App -->
       <div class="service-card reveal">
         <div class="service-icon">
-          <svg class="icon-lg" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          <!-- أيقونة كرة أرضية للويب -->
+          <svg class="icon-lg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
         </div>
         <h3>Web App</h3>
         <p>تطوير تطبيقات ومواقع ويب سريعة، آمنة، ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات.</p>
       </div>
 
+      <!-- Mobile App -->
       <div class="service-card reveal">
         <div class="service-icon">
+          <!-- أيقونة موبايل -->
           <svg class="icon-lg" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
         </div>
         <h3>Mobile App</h3>
         <p>بناء تطبيقات iOS و Android بتجربة مستخدم سلسة وأداء عالٍ يناسب احتياجاتك.</p>
       </div>
 
+      <!-- Desktop App -->
       <div class="service-card reveal">
         <div class="service-icon">
-          <svg class="icon-lg" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+          <!-- أيقونة شاشة كمبيوتر للديسكتوب -->
+          <svg class="icon-lg" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
         </div>
         <h3>Desktop App</h3>
         <p>تطوير برامج سطح المكتب لنظامي Windows و macOS بكفاءة عالية وواجهات مستخدم مريحة.</p>
@@ -541,7 +569,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 <section id="team">
   <div class="container">
     <h2 class="section-title reveal">فريقنا</h2>
-    <p class="section-sub reveal">20 عضواً متخصصاً يعملون بشغف على مشروعك</p>
+    <p class="section-sub reveal">نخبة من المبرمجين يعملون بشغف</p>
     <div class="team-grid" id="teamGrid"><!-- سيتم توليده بالـ JS --></div>
   </div>
 </section>
@@ -601,7 +629,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
       </a>
       <p>خلونا نكون سند لبعض، نكبر مع بعض، نتعلم مع بعض. فريق واحد نجاحنا مسؤولية الجميع.</p>
       <div class="footer-socials">
-        <!-- يمكنك إضافة روابط السوشيال ميديا الخاصة بالفريق هنا لاحقاً -->
+
       </div>
     </div>
     <div class="footer-col">
@@ -618,7 +646,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
     </div>
   </div>
   <div class="footer-bottom">
-    © <span id="year"></span> NEXT Bit TEAM — بالبداية شكراً لكل شخص اختار يكون جزء من البداية
+    © <span id="year"></span> NEXT Bit TEAM — بالنهاية شكراً لكل شخص اختار يكون جزء من البداية
   </div>
 </footer>
 
@@ -627,38 +655,37 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 </button>
 
 <script>
-
 const team = [
-  { name:'',               role:'',    color:'#ff7b93' },
-  { name:'',                   role:'', color:'#38bdf8' },
-  { name:'',                    role:'',  color:'#b197fc' },
-  { name:'',                      role:'', color:'#ff7b93' },
-  { name:' ',                     role:'',   color:'#38bdf8' },
-  { name:' ',                      role:'',   color:'#b197fc' },
-  { name:' ',                       role:'',   color:'#ff7b93' },
-  { name:' ',                           role:'', color:'#38bdf8' },
-  { name:' ',                           role:' ',  color:'#b197fc' },
-  { name:' ',                             role:' ',  color:'#ff7b93' },
-  { name:' ',                              role:' ',   color:'#38bdf8' },
-  { name:' ',                                   role:'', color:'#b197fc' },
-  { name:' ',                                   role:' ', color:'#ff7b93' },
-  { name:' ',                                     role:' ',color:'#38bdf8' },
-  { name:'',                                     role:'',    color:'#b197fc' },
-  { name:'',                                        role:' ',  color:'#ff7b93' },
-  { name:'',                                           role:' ', color:'#38bdf8' },
-  { name:'',                                            role:' ',  color:'#b197fc' },
-  { name:'',                                             role:' ',   color:'#ff7b93' },
-  { name:'',                                               role:'',    color:'#38bdf8' },
+  { name:'محمد الشب',          role:'IT Engineer', color:'#ff7b93' },
+  { name:'احمد ربيع الشب',     role:'IT Engineer', color:'#38bdf8' },
+  { name:'خالد اعبيد',         role:'IT Engineer', color:'#b197fc' },
+  { name:'زيد طلاع',           role:'IT Engineer', color:'#ff7b93' },
+  { name:'عبدالله الدامان',    role:'IT Engineer', color:'#38bdf8' },
+  { name:'محمد الشيخ',         role:'IT Engineer', color:'#b197fc' },
+  { name:'عبد اللطيف ابو عريضة',role:'IT Engineer', color:'#ff7b93' },
+  { name:'محمد محسن',          role:'IT Engineer', color:'#38bdf8' },
+  { name:'حاكم عبد الرحيم',    role:'IT Engineer', color:'#b197fc' },
+  { name:'مصطفى شعبان',        role:'IT Engineer', color:'#ff7b93' },
+  { name:'صلاح الدين الخلف',   role:'IT Engineer', color:'#38bdf8' },
+   { name:'نضال الحسن',         role:'IT Engineer', color:'#ff7b93' },
+    { name:'محمد خميس',         role:'IT Engineer', color:'#ff7b93' },
+  { name:'أسلام العلي',        role:'IT Engineer', color:'#b197fc' },
+  { name:'مي الراعي',          role:'IT Engineer', color:'#ff7b93' },
+  { name:'زهراء الشب',         role:'IT Engineer', color:'#38bdf8' },
+  { name:'راما محمد',          role:'IT Engineer', color:'#b197fc' },
+  { name:'اسراء شيخو',         role:'IT Engineer', color:'#38bdf8' },
+  { name:'رقية شربو',          role:'IT Engineer', color:'#b197fc' },
+  { name:'حياة زينو',          role:'IT Engineer', color:'#ff7b93' },
+  { name:'ندى الحسن',          role:'IT Engineer', color:'#38bdf8' },
+  { name:'ايه ياسين',          role:'IT Engineer', color:'#38bdf6' }
 ];
-
 
 const teamGrid = document.getElementById('teamGrid');
 team.forEach(m => {
-  const initials = m.name.split(' ').map(w => w[0]).slice(0,2).join('');
   const card = document.createElement('div');
   card.className = 'member reveal';
   card.innerHTML = `
-    <div class="avatar" style="background:${m.color}">${initials}</div>
+    <div class="avatar" style="background:${m.color}"></div>
     <h4>${m.name}</h4>
     <div class="role">${m.role}</div>
   `;
@@ -705,7 +732,10 @@ const counterObserver = new IntersectionObserver((entries) => {
     const timer = setInterval(() => {
       current += step;
       if (current >= target) { current = target; clearInterval(timer); }
-      el.textContent = current + (target >= 20 ? '+' : '');
+      
+      // تحديث العداد ليضيف علامة + للرقم 21
+      el.textContent = current + (target === 21 ? '+' : ''); 
+      
     }, 25);
     counterObserver.unobserve(el);
   });
@@ -720,7 +750,7 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
 
   const subject = encodeURIComponent(`طلب انضمام للفريق من ${name}`);
   const body = encodeURIComponent(`الاسم: ${name}\nالبريد: ${email}\n\nماذا يقدم للفريق:\n${message}`);
-  window.location.href = `mailto:hello@nextbit.team?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:nextbit.team?subject=${subject}&body=${body}`;
 });
 </script>
 
