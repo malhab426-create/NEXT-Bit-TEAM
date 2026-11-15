@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-/* ========== نظام الألوان (Flat & Clean) ========== */
+
 :root{
   --bg: #0b0e14;
   --surface: #151a24;
@@ -27,7 +27,7 @@
   --radius: 12px;
 }
 
-/* ========== الأساسيات ========== */
+
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;scroll-padding-top:80px;}
 body{
@@ -43,7 +43,7 @@ img, svg{display:block;}
 section{padding:100px 24px;position:relative;}
 .container{max-width:1140px;margin:0 auto;}
 
-/* ========== العناوين ========== */
+
 .section-title{
   font-size:clamp(1.8rem,4vw,2.5rem);
   font-weight:800;
@@ -59,7 +59,6 @@ section{padding:100px 24px;position:relative;}
   font-size:1.05rem;
 }
 
-/* ========== أيقونات SVG ========== */
 .icon {
   width: 24px;
   height: 24px;
@@ -71,7 +70,7 @@ section{padding:100px 24px;position:relative;}
 }
 .icon-lg { width: 32px; height: 32px; }
 
-/* ========== شريط التنقل ========== */
+
 nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   background:rgba(11,14,20,.9);
@@ -97,7 +96,6 @@ nav{
 .nav-cta:hover{background:var(--primary-hover);}
 .menu-btn{display:none;background:none;border:none;color:var(--text);cursor:pointer;}
 
-/* ========== Hero ========== */
 #hero{
   min-height:90vh;display:flex;align-items:center;justify-content:center;
   padding-top:120px;padding-bottom:60px;text-align:center;
@@ -117,7 +115,6 @@ nav{
 }
 .hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 
-/* ========== الأزرار ========== */
 .btn{
   padding:12px 28px;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;border:none;
   transition:all .2s;display:inline-flex;align-items:center;gap:8px;font-family:inherit;
@@ -127,13 +124,11 @@ nav{
 .btn-outline{background:transparent;color:var(--text);border:1px solid var(--border);}
 .btn-outline:hover{background:var(--surface);border-color:var(--muted);}
 
-/* ========== الإحصائيات ========== */
 #stats{padding:60px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:1000px;margin:0 auto;text-align:center;}
 .stat h3{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:900;color:var(--text);margin-bottom:4px;}
 .stat p{color:var(--muted);font-size:.95rem;font-weight:500;}
 
-/* ========== الأقسام النصية (الفلسفة) ========== */
 #philosophy{background:var(--bg);}
 .philosophy-content{max-width:800px;margin:0 auto;}
 .philosophy-content p{font-size:1.1rem;color:var(--muted);margin-bottom:20px;line-height:1.9;}
@@ -146,14 +141,12 @@ nav{
 .highlight-box h3{color:var(--text);font-size:1.4rem;margin-bottom:12px;font-weight:800;}
 .highlight-box p{font-size:1.1rem;color:var(--muted);margin:0;}
 
-/* ========== الرحلة ========== */
 #journey{background:var(--surface);}
 .journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1000px;margin:0 auto;}
 .journey-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px;}
 .journey-card h3{color:var(--secondary);font-size:1.25rem;margin-bottom:16px;font-weight:700;display:flex;align-items:center;gap:10px;}
 .journey-card p{color:var(--muted);margin-bottom:16px;}
 
-/* ========== المبادئ ========== */
 #principles{background:var(--bg);}
 .principles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:0 auto;}
 .principle-card{
@@ -167,7 +160,6 @@ nav{
 }
 .principle-card h4{font-size:1.05rem;font-weight:700;color:var(--text);}
 
-/* ========== الأهداف ========== */
 #goals{background:var(--surface);}
 .goals-container{max-width:800px;margin:0 auto;position:relative;}
 .goals-container::before{content:'';position:absolute;right:16px;top:0;bottom:0;width:2px;background:var(--border);}
@@ -179,7 +171,6 @@ nav{
 .goal-item h4{font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:8px;}
 .goal-item p{color:var(--muted);font-size:.95rem;}
 
-/* ========== الخدمات ========== */
 #services{background:var(--bg);}
 .services-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;}
 @media (max-width: 900px) {
@@ -197,7 +188,6 @@ nav{
 .service-card h3{font-size:1.2rem;font-weight:700;margin-bottom:12px; direction: ltr;}
 .service-card p{color:var(--muted);font-size:.95rem;}
 
-/* ========== الأعمال ========== */
 #portfolio{background:var(--surface);}
 .portfolio-empty {
   text-align: center;
@@ -213,7 +203,6 @@ nav{
 .portfolio-empty h3 { color: var(--text); margin-bottom: 12px; font-size: 1.3rem; font-weight: 700; }
 .portfolio-empty p { font-size: 1rem; }
 
-/* ========== الفريق ========== */
 #team{background:var(--bg);}
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
 .member{
@@ -229,7 +218,6 @@ nav{
 .member h4{font-size:1.05rem;font-weight:700;margin-bottom:4px;}
 .member .role{color:var(--muted);font-size:.85rem;font-weight:500; direction: ltr;}
 
-/* ========== التواصل ========== */
 #contact{background:var(--surface);}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
 .contact-info h2{font-size:2rem;font-weight:800;margin-bottom:16px;}
@@ -253,7 +241,6 @@ nav{
 .form-group textarea{resize:vertical;min-height:120px;}
 .contact-form .btn{width:100%;justify-content:center;}
 
-/* ========== الفوتر ========== */
 footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px 30px;}
 .footer-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
 .footer-brand p{color:var(--muted);font-size:.95rem;margin-top:16px;max-width:320px;}
@@ -265,7 +252,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 .footer-socials a{color:var(--muted);transition:color .2s;}
 .footer-socials a:hover{color:var(--text);}
 
-/* ========== أدوات مساعدة ========== */
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 
@@ -278,7 +264,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 #to-top.show{opacity:1;pointer-events:auto;}
 #to-top:hover{background:var(--surface-hover);}
 
-/* ========== Responsive ========== */
 @media (max-width:900px){
   .journey-grid,.contact-grid{grid-template-columns:1fr;gap:40px;}
   .footer-grid{grid-template-columns:1fr 1fr;}
@@ -311,7 +296,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 </head>
 <body>
 
-<!-- ========== شريط التنقل ========== -->
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#hero" class="logo">
@@ -333,7 +317,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </nav>
 
-<!-- ========== Hero ========== -->
 <section id="hero">
   <div class="container">
     <div class="hero-badge">
@@ -354,7 +337,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== Stats ========== -->
 <section id="stats">
   <div class="stats-grid">
     <div class="stat">
@@ -376,7 +358,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== فلسفتنا ========== -->
 <section id="philosophy">
   <div class="container">
     <h2 class="section-title reveal">شو يعني فريق؟</h2>
@@ -394,7 +375,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== رحلتنا ========== -->
 <section id="journey">
   <div class="container">
     <h2 class="section-title reveal">طيب ليش نحن هون؟</h2>
@@ -427,7 +407,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== مبادئنا ========== -->
 <section id="principles">
   <div class="container">
     <h2 class="section-title reveal">مبادئ الفريق</h2>
@@ -475,7 +454,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== أهدافنا ========== -->
 <section id="goals">
   <div class="container">
     <h2 class="section-title reveal">أهداف الفريق</h2>
@@ -511,14 +489,12 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== الخدمات ========== -->
 <section id="services">
   <div class="container">
     <h2 class="section-title reveal">خدماتنا</h2>
     <p class="section-sub reveal">حلول متكاملة من الفكرة إلى الإطلاق</p>
     <div class="services-grid">
       
-      <!-- Web App -->
       <div class="service-card reveal">
         <div class="service-icon">
           <svg class="icon-lg" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
@@ -527,7 +503,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
         <p>تطوير تطبيقات ومواقع ويب سريعة، آمنة، ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات.</p>
       </div>
 
-      <!-- Mobile App -->
       <div class="service-card reveal">
         <div class="service-icon">
           <svg class="icon-lg" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
@@ -536,7 +511,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
         <p>بناء تطبيقات iOS و Android بتجربة مستخدم سلسة وأداء عالٍ يناسب احتياجاتك.</p>
       </div>
 
-      <!-- Desktop App -->
       <div class="service-card reveal">
         <div class="service-icon">
           <svg class="icon-lg" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
@@ -549,7 +523,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== الأعمال ========== -->
 <section id="portfolio">
   <div class="container">
     <h2 class="section-title reveal">أعمالنا</h2>
@@ -565,7 +538,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== الفريق ========== -->
 <section id="team">
   <div class="container">
     <h2 class="section-title reveal">فريقنا</h2>
@@ -574,7 +546,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== التواصل ========== -->
 <section id="contact">
   <div class="container contact-grid">
     <div class="contact-info reveal">
@@ -589,7 +560,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
         </div>
         <div>
           <h5>البريد الإلكتروني</h5>
-          <p>hello@nextbit.team</p>
+          <p>nextbit.team</p>
         </div>
       </div>
       <div class="contact-item">
@@ -598,7 +569,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
         </div>
         <div>
           <h5>الهاتف / واتساب</h5>
-          <p>+966 5X XXX XXXX</p>
+          <p>0000000000</p>
         </div>
       </div>
     </div>
@@ -621,7 +592,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
   </div>
 </section>
 
-<!-- ========== Footer ========== -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
@@ -657,33 +627,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px
 </button>
 
 <script>
-/* ============================================================
-   بيانات الفريق (تمت إزالة روابط جيت هاب ولينكد ان)
-   ============================================================ */
+
 const team = [
-  { name:'أحمد الخطيب',   role:'Team Lead',    color:'#ff7b93' },
-  { name:'سارة الحسن',    role:'Frontend Dev', color:'#38bdf8' },
-  { name:'محمد العلي',    role:'Backend Dev',  color:'#b197fc' },
-  { name:'ليلى إبراهيم',  role:'UI/UX Design', color:'#ff7b93' },
-  { name:'عمر خالد',      role:'Mobile Dev',   color:'#38bdf8' },
-  { name:'نور الدين',     role:'DevOps Eng',   color:'#b197fc' },
-  { name:'رامي سعيد',     role:'Full Stack',   color:'#ff7b93' },
-  { name:'هنا يوسف',      role:'Frontend Dev', color:'#38bdf8' },
-  { name:'ياسر محمود',    role:'Backend Dev',  color:'#b197fc' },
-  { name:'مريم عبدالله',  role:'QA Engineer',  color:'#ff7b93' },
-  { name:'طارق ناصر',     role:'Mobile Dev',   color:'#38bdf8' },
-  { name:'سلمى فؤاد',     role:'UI/UX Design', color:'#b197fc' },
-  { name:'خالد عمران',    role:'Security Eng', color:'#ff7b93' },
-  { name:'دينا رشيد',     role:'Data Engineer',color:'#38bdf8' },
-  { name:'زياد حمدان',    role:'AI/ML Eng',    color:'#b197fc' },
-  { name:'رنا سليمان',    role:'Product Mgr',  color:'#ff7b93' },
-  { name:'فادي جورج',     role:'Frontend Dev', color:'#38bdf8' },
-  { name:'أميرة حسن',     role:'Backend Dev',  color:'#b197fc' },
-  { name:'بشار قاسم',     role:'Mobile Dev',   color:'#ff7b93' },
-  { name:'جودي منصور',    role:'Marketing',    color:'#38bdf8' },
+  { name:'',               role:'',    color:'#ff7b93' },
+  { name:'',                   role:'', color:'#38bdf8' },
+  { name:'',                    role:'',  color:'#b197fc' },
+  { name:'',                      role:'', color:'#ff7b93' },
+  { name:' ',                     role:'',   color:'#38bdf8' },
+  { name:' ',                      role:'',   color:'#b197fc' },
+  { name:' ',                       role:'',   color:'#ff7b93' },
+  { name:' ',                           role:'', color:'#38bdf8' },
+  { name:' ',                           role:' ',  color:'#b197fc' },
+  { name:' ',                             role:' ',  color:'#ff7b93' },
+  { name:' ',                              role:' ',   color:'#38bdf8' },
+  { name:' ',                                   role:'', color:'#b197fc' },
+  { name:' ',                                   role:' ', color:'#ff7b93' },
+  { name:' ',                                     role:' ',color:'#38bdf8' },
+  { name:'',                                     role:'',    color:'#b197fc' },
+  { name:'',                                        role:' ',  color:'#ff7b93' },
+  { name:'',                                           role:' ', color:'#38bdf8' },
+  { name:'',                                            role:' ',  color:'#b197fc' },
+  { name:'',                                             role:' ',   color:'#ff7b93' },
+  { name:'',                                               role:'',    color:'#38bdf8' },
 ];
 
-/* توليد بطاقات الفريق */
+
 const teamGrid = document.getElementById('teamGrid');
 team.forEach(m => {
   const initials = m.name.split(' ').map(w => w[0]).slice(0,2).join('');
@@ -697,10 +665,8 @@ team.forEach(m => {
   teamGrid.appendChild(card);
 });
 
-/* السنة الحالية */
 document.getElementById('year').textContent = new Date().getFullYear();
 
-/* قائمة الجوال */
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
 menuBtn.addEventListener('click', () => {
@@ -712,14 +678,12 @@ navLinks.querySelectorAll('a').forEach(a => {
   });
 });
 
-/* الناف بار والتمرير */
 const toTop = document.getElementById('to-top');
 window.addEventListener('scroll', () => {
   toTop.classList.toggle('show', window.scrollY > 400);
 });
 toTop.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
 
-/* حركة الظهور */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -730,7 +694,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* عدّادات الإحصائيات */
 const counters = document.querySelectorAll('.stat h3[data-count]');
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -749,7 +712,6 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 counters.forEach(c => counterObserver.observe(c));
 
-/* نموذج التواصل */
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
   const name = document.getElementById('name').value;
