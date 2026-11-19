@@ -3,203 +3,216 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXT Bit TEAM | مبرمجين، طلاب، وبشر عاديين</title>
-<meta name="description" content="إحنا فريق NEXT Bit. طلاب ومبرمجين، بنغلط وبنصحح، وبنبني مشاريعنا من الصفر.">
+<title>NEXT Bit TEAM </title>
+<meta name="description" content="فريق NEXT Bit — فريق حقيقي بيجمعنا هدف واحد ومآمنين بفكرة واحدة. ماعنا رئيس ومرؤوس، كلنا إيد وحدة.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-
 :root{
-  --bg: #1a1918;        
-  --surface: #242321;
-  --surface-hover: #2d2b29;
-  --border: #3a3835;
+  --bg: #01153b;
+  --surface: #151a24;
+  --surface-hover: #1c2230;
+  --border: #2a3441;
   
-  --primary: #e07a5f;    
-  --secondary: #81b29a;  
-  --accent: #f2cc8f;     
-  --text: #f4f1ea;        
-  --muted: #a8a39d;
-  --radius: 8px;
+  --primary: #ff7b93;
+  --primary-hover: #e05c73;
+  --secondary: #38bdf8;
+  --accent: #b197fc;
+  
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --radius: 12px;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;scroll-padding-top:100px;}
+html{scroll-behavior:smooth;scroll-padding-top:80px;}
 body{
-  font-family:'Cairo', system-ui, sans-serif;
+  font-family:'Tajawal',system-ui,sans-serif;
   background-color:var(--bg);
   color:var(--text);
-  line-height:1.7;
+  line-height:1.8;
   overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
-
-.handwritten {
-  font-family: 'Caveat', cursive;
-  font-size: 1.5rem;
-  color: var(--accent);
-  transform: rotate(-2deg);
-  display: inline-block;
-}
-
-h1, h2, h3, h4, .section-title {
-  font-family: 'Amiri', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
 a{color:inherit;text-decoration:none;}
-img{max-width:100%;display:block;}
+img, svg{display:block;}
+section{padding:100px 24px;position:relative;}
+.container{max-width:1140px;margin:0 auto;}
 
-.wobbly-border {
-  border: 1px solid var(--border);
-  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%; 
+.section-title{
+  font-size:clamp(1.8rem,4vw,2.5rem);
+  font-weight:800;
+  text-align:center;
+  margin-bottom:12px;
+  color:var(--text);
+}
+.section-sub{
+  text-align:center;
+  color:var(--muted);
+  max-width:600px;
+  margin:0 auto 56px;
+  font-size:1.05rem;
 }
 
-section{padding:110px 24px;position:relative;}
-.container{max-width:1050px;margin:0 auto;}
-
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+.icon-lg { width: 32px; height: 32px; }
 
 nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;
-  background:rgba(26,25,24,.95);
-  border-bottom: 2px dashed var(--border);
+  background:rgba(11,14,20,.9);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
 }
 .nav-inner{
-  max-width:1100px;margin:0 auto;padding:16px 24px;
+  max-width:1140px;margin:0 auto;padding:16px 24px;
   display:flex;align-items:center;justify-content:space-between;
 }
+
 .logo{
-  display:flex;flex-direction:column;align-items:flex-start;line-height:1.1;
-  transform: rotate(-1deg);
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  line-height:1.1;
 }
-.logo-text{font-size:1.6rem;font-weight:800;color:#fff;font-family:'Cairo', sans-serif;}
+.logo-text{font-size:1.5rem;font-weight:900;letter-spacing:-0.5px;color:#fff;font-family: Arial, sans-serif;}
 .logo-text span{color:var(--primary);}
-.logo-sub{font-size:0.75rem;color:var(--muted);letter-spacing:4px;font-weight:700;margin-top:2px;}
+.logo-sub{font-size:0.7rem;color:var(--muted);letter-spacing:4px;font-weight:700;margin-top:2px;font-family: Arial, sans-serif;}
 
 .nav-links{display:flex;gap:28px;align-items:center;}
-.nav-links a{font-size:.95rem;font-weight:600;color:var(--muted);transition:color .2s;}
-.nav-links a:hover{color:var(--primary);}
+.nav-links a{font-size:.95rem;font-weight:500;color:var(--muted);transition:color .2s;}
+.nav-links a:hover{color:var(--text);}
 .nav-cta{
   background:var(--primary);color:#fff !important;
-  padding:8px 20px;border-radius:4px 12px 4px 12px;font-weight:700;
+  padding:8px 20px;border-radius:8px;font-weight:700;transition:background .2s;
 }
+.nav-cta:hover{background:var(--primary-hover);}
 .menu-btn{display:none;background:none;border:none;color:var(--text);cursor:pointer;}
-
 
 #hero{
   min-height:90vh;display:flex;align-items:center;justify-content:center;
-  padding-top:140px;padding-bottom:80px;text-align:center;
+  padding-top:120px;padding-bottom:60px;text-align:center;
 }
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
   background:var(--surface);border:1px solid var(--border);
   padding:6px 16px;border-radius:100px;font-size:.9rem;color:var(--muted);margin-bottom:24px;
-  transform: rotate(1deg);
 }
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--primary);}
 .hero-title{
-  font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.2;margin-bottom:24px;
+  font-size:clamp(2.2rem,5vw,4rem);font-weight:900;line-height:1.3;margin-bottom:24px;letter-spacing:-1px;
 }
-.hero-title span { color: var(--primary); position: relative; }
-.hero-title span::after {
-  content: ''; position: absolute; bottom: 5px; left: 0; right: 0;
-  height: 8px; background: rgba(224, 122, 95, 0.3); z-index: -1; transform: rotate(-2deg);
-}
+.text-primary { color: var(--primary); }
 .hero-desc{
-  font-size:clamp(1.05rem,2vw,1.2rem);color:var(--muted);max-width:650px;margin:0 auto 30px;
+  font-size:clamp(1rem,2vw,1.15rem);color:var(--muted);max-width:700px;margin:0 auto 20px;
 }
-.hero-desc strong { color: var(--text); }
+.hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 
 .hero-supervisor {
-  font-family: 'Cairo', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--secondary);
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: var(--primary);
   margin-bottom: 40px;
-  padding: 10px 20px;
-  border: 2px dashed var(--secondary);
-  display: inline-block;
-  border-radius: 8px 2px 8px 2px;
-  transform: rotate(-1deg);
+  letter-spacing: 0.5px;
 }
-
 
 .btn{
-  padding:14px 32px;border-radius:6px;font-weight:700;font-size:1rem;cursor:pointer;border:none;
-  transition:transform .2s, background .2s; display:inline-flex;align-items:center;gap:8px;
-  font-family:'Cairo', sans-serif;
+  padding:12px 28px;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;border:none;
+  transition:all .2s;display:inline-flex;align-items:center;gap:8px;font-family:inherit;
 }
-.btn-primary{background:var(--primary);color:#fff; border-bottom: 3px solid #b55a42;}
-.btn-primary:hover{background:#d06a50; transform: translateY(-2px);}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-primary:hover{background:var(--primary-hover);}
 .btn-outline{background:transparent;color:var(--text);border:1px solid var(--border);}
 .btn-outline:hover{background:var(--surface);border-color:var(--muted);}
 
-.update-note {
-  font-size: 0.85rem;
-  color: var(--muted);
-  background: var(--surface);
-  padding: 4px 12px;
-  border-radius: 20px;
-  display: inline-block;
-  margin-top: 15px;
-  font-family: monospace;
-}
+#stats{padding:60px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:1000px;margin:0 auto;text-align:center;}
+.stat h3{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:900;color:var(--text);margin-bottom:4px;}
+.stat p{color:var(--muted);font-size:.95rem;font-weight:500;}
 
-#stats{
-  padding:60px 24px; border-top:1px dashed var(--border); border-bottom:1px dashed var(--border);
-  background:var(--surface);
-}
-.stats-grid{
-  display:flex; flex-wrap:wrap; gap:20px; justify-content:center; max-width:900px; margin:0 auto;
-}
-.stat { flex: 1; min-width: 150px; text-align: center; }
-.stat h3{font-size:2.5rem;font-weight:800;color:var(--primary);margin-bottom:4px; font-family:'Cairo', sans-serif;}
-.stat p{color:var(--muted);font-size:.95rem;}
-
-
-.philosophy-content{max-width:750px;margin:0 auto; position: relative;}
-.philosophy-content p{font-size:1.15rem;color:var(--muted);margin-bottom:24px;line-height:1.9;}
-.philosophy-content strong{color:var(--text); background: rgba(242,204,143,.1); padding: 0 4px;}
-
+#philosophy{background:var(--bg);}
+.philosophy-content{max-width:800px;margin:0 auto;}
+.philosophy-content p{font-size:1.1rem;color:var(--muted);margin-bottom:20px;line-height:1.9;}
+.philosophy-content strong{color:var(--text);font-weight:700;}
 .highlight-box{
   border-right:4px solid var(--primary);
   background:var(--surface);
-  padding:24px 32px;margin:40px 0;border-radius:0 8px 8px 0;
-  transform: rotate(0.5deg);
+  padding:24px 32px;margin:32px 0;border-radius:0 8px 8px 0;
 }
+.highlight-box h3{color:var(--text);font-size:1.4rem;margin-bottom:12px;font-weight:800;}
+.highlight-box p{font-size:1.1rem;color:var(--muted);margin:0;}
 
- 
-.principles-grid, .services-grid {
-  display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:24px; max-width:1000px; margin:0 auto;
-}
-.principle-card, .service-card{
-  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
-  padding:30px 24px; transition: transform .2s, border-color .2s; position: relative;
-}
-/* إمالة عشوائية للكروت لتبدو بشرية */
-.principle-card:nth-child(odd) { transform: rotate(-0.5deg); }
-.principle-card:nth-child(even) { transform: rotate(0.5deg); }
+#journey{background:var(--surface);}
+.journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1000px;margin:0 auto;}
+.journey-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px;}
+.journey-card h3{color:var(--secondary);font-size:1.25rem;margin-bottom:16px;font-weight:700;display:flex;align-items:center;gap:10px;}
+.journey-card p{color:var(--muted);margin-bottom:16px;}
 
-.principle-card:hover, .service-card:hover {
-  transform: translateY(-4px) rotate(0deg); border-color: var(--primary);
+#principles{background:var(--bg);}
+.principles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:0 auto;}
+.principle-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:24px;display:flex;align-items:center;gap:16px;transition:border-color .2s;
 }
+.principle-card:hover{border-color:var(--accent);}
+.principle-icon{
+  width:48px;height:48px;border-radius:8px;background:rgba(177,151,252,.1);
+  color:var(--accent);display:grid;place-items:center;flex-shrink:0;
+}
+.principle-card h4{font-size:1.05rem;font-weight:700;color:var(--text);}
+
+#goals{background:var(--surface);}
+.goals-container{max-width:800px;margin:0 auto;position:relative;}
+.goals-container::before{content:'';position:absolute;right:16px;top:0;bottom:0;width:2px;background:var(--border);}
+.goal-item{position:relative;padding-right:48px;margin-bottom:32px;}
+.goal-item::before{
+  content:'';position:absolute;right:10px;top:4px;width:14px;height:14px;border-radius:50%;
+  background:var(--primary);border:3px solid var(--surface);z-index:2;
+}
+.goal-item h4{font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:8px;}
+.goal-item p{color:var(--muted);font-size:.95rem;}
+
+#services{background:var(--bg);}
+.services-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;}
+@media (max-width: 900px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
+.service-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:32px;transition:border-color .2s; text-align: center;
+}
+.service-card:hover{border-color:var(--border); background: var(--surface-hover);}
 .service-icon{
-  width:50px;height:50px;border-radius:8px;background:rgba(224,122,95,.1);
-  color:var(--primary);display:grid;place-items:center;margin-bottom:16px;
+  width:64px;height:64px;border-radius:12px;background:rgba(255,123,147,.1);
+  color:var(--primary);display:grid;place-items:center;margin:0 auto 20px;
 }
-.service-card h3{font-size:1.3rem; margin-bottom:10px;}
-.service-card p { color: var(--muted); font-size: 0.95rem;}
+.service-card h3{font-size:1.2rem;font-weight:700;margin-bottom:12px; direction: ltr;}
+.service-card p{color:var(--muted);font-size:.95rem;}
 
-
+#portfolio{background:var(--surface);}
 .portfolio-empty {
-  text-align: center; padding: 60px 24px; background: var(--surface);
-  border: 2px dashed var(--border); border-radius: var(--radius); max-width: 600px; margin: 0 auto;
-  transform: rotate(-1deg);
+  text-align: center;
+  padding: 80px 24px;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
 }
-.portfolio-empty h3 { color: var(--text); margin-bottom: 10px; font-size: 1.5rem;}
-.portfolio-empty p { color: var(--muted); font-size: 1rem;}
-
+.portfolio-empty svg { margin: 0 auto 20px; color: var(--border); width: 56px; height: 56px; }
+.portfolio-empty h3 { color: var(--text); margin-bottom: 12px; font-size: 1.3rem; font-weight: 700; }
+.portfolio-empty p { font-size: 1rem; }
 
 .team-grid{
   display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:30px 20px;
@@ -208,7 +221,7 @@ nav{
   background:#fff; 
   padding: 12px 12px 40px 12px;
   border: 1px solid #ddd;
-  box-shadow: 3px 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
   text-align:center; transition: transform .3s;
   position: relative;
 }
@@ -222,7 +235,7 @@ nav{
 .member::before {
   content: ''; position: absolute; top: -10px; left: 50%; transform: translateX(-50%) rotate(3deg);
   width: 60px; height: 20px; background: rgba(242, 204, 143, 0.6);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .avatar{
   width:100%; height:150px; border-radius:4px; margin-bottom:12px;
@@ -232,61 +245,79 @@ nav{
 .member h4{font-size:1rem;font-weight:800; color:#222; margin-bottom:2px; font-family:'Cairo', sans-serif;}
 .member .role{color:#666;font-size:.8rem;font-weight:600;}
 
-
+#contact{background:var(--surface);}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
-.contact-info h2{font-size:2.2rem;margin-bottom:16px;}
+.contact-info h2{font-size:2rem;font-weight:800;margin-bottom:16px;}
 .contact-info > p{color:var(--muted);margin-bottom:32px;font-size:1.05rem;}
 .contact-item{display:flex;align-items:center;gap:16px;margin-bottom:24px;}
 .contact-icon{
-  width:48px;height:48px;border-radius:50%; background:var(--surface); border:1px solid var(--border);
-  color:var(--primary);display:grid;place-items:center;
+  width:48px;height:48px;border-radius:12px;background:var(--bg);border:1px solid var(--border);
+  color:var(--text);display:grid;place-items:center;flex-shrink:0;
 }
-.contact-form{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;}
+.contact-item h5{font-size:.85rem;color:var(--muted);font-weight:500;margin-bottom:2px;}
+.contact-item p{font-size:1rem;font-weight:600;direction:ltr;text-align:right;color:var(--text);}
+
+.contact-form{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px;}
 .form-group{margin-bottom:20px;}
-.form-group label{display:block;margin-bottom:8px;font-weight:600;color:var(--text);}
+.form-group label{display:block;margin-bottom:8px;font-size:.9rem;font-weight:600;color:var(--text);}
 .form-group input,.form-group textarea{
-  width:100%;padding:12px 16px;background:var(--bg);border:1px solid var(--border);
-  border-radius:6px;color:var(--text);font-family:'Cairo', sans-serif;
+  width:100%;padding:12px 16px;background:var(--surface);border:1px solid var(--border);
+  border-radius:8px;color:var(--text);font-family:inherit;font-size:1rem;transition:border-color .2s;
 }
 .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);}
+.form-group textarea{resize:vertical;min-height:120px;}
+.contact-form .btn{width:100%;justify-content:center;}
 
-footer{background:var(--surface);border-top:2px dashed var(--border);padding:60px 24px 30px;}
-.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;}
+footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 24px 30px;}
+.footer-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
 .footer-brand p{color:var(--muted);font-size:.95rem;margin-top:16px;max-width:320px;}
-.footer-col h4{font-size:1.1rem;margin-bottom:20px;color:var(--text);}
-.footer-col a{display:block;color:var(--muted);font-size:.95rem;margin-bottom:12px;}
-.footer-bottom{max-width:1100px;margin:40px auto 0;padding-top:24px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:.85rem;}
+.footer-col h4{font-size:1rem;font-weight:700;margin-bottom:20px;color:var(--text);}
+.footer-col a{display:block;color:var(--muted);font-size:.95rem;margin-bottom:12px;transition:color .2s;}
+.footer-col a:hover{color:var(--text);}
+.footer-bottom{max-width:1140px;margin:0 auto;padding-top:24px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:.9rem;}
+.footer-socials{display:flex;gap:16px;margin-top:24px;}
+.footer-socials a{color:var(--muted);transition:color .2s;}
+.footer-socials a:hover{color:var(--text);}
 
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(0.2, 0.8, 0.2, 1), transform .8s cubic-bezier(0.2, 0.8, 0.2, 1);}
-.reveal.visible{opacity:1;transform:translateY(0) rotate(0);}
-
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
 
 #to-top{
-  position:fixed;bottom:30px;left:30px;width:45px;height:45px;border-radius:50%;
-  background:var(--primary);color:#fff;border:none;cursor:pointer;
-  opacity:0;pointer-events:none;transition:all .3s;z-index:999;
-  display:grid;place-items:center;font-size:1.2rem;
+  position:fixed;bottom:30px;left:30px;width:44px;height:44px;border-radius:8px;
+  background:var(--surface);color:var(--text);border:1px solid var(--border);
+  cursor:pointer;opacity:0;pointer-events:none;transition:all .3s;z-index:999;
+  display:grid;place-items:center;
 }
 #to-top.show{opacity:1;pointer-events:auto;}
-
+#to-top:hover{background:var(--surface-hover);}
 
 @media (max-width:900px){
   .journey-grid,.contact-grid{grid-template-columns:1fr;gap:40px;}
-  .footer-grid{grid-template-columns:1fr;}
-  .stats-grid{flex-direction: column;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .footer-brand{grid-column:1/-1;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:32px;}
 }
 @media (max-width:768px){
-  section{padding:80px 20px;}
+  section{padding:70px 20px;}
   .nav-links{
-    position:fixed;top:73px;right:0;left:0;background:var(--bg);border-bottom:1px dashed var(--border);
-    flex-direction:column;gap:0;padding:20px;transform:translateY(-150%);transition:transform .3s;
+    position:fixed;top:73px;right:0;left:0;background:var(--bg);border-bottom:1px solid var(--border);
+    flex-direction:column;gap:0;padding:20px;transform:translateY(-150%);transition:transform .3s ease;
   }
   .nav-links.open{transform:translateY(0);}
   .nav-links a{width:100%;padding:14px 0;border-bottom:1px solid var(--border);}
+  .nav-links a:last-child{border-bottom:none;}
+  .nav-cta{text-align:center;margin-top:10px;border:none;}
   .menu-btn{display:block;}
-  .team-grid{grid-template-columns:repeat(2,1fr);}
+  .team-grid{grid-template-columns:repeat(2,1fr);gap:16px;}
+  .goals-container::before{right:11px;}
+  .goal-item{padding-right:36px;}
+  .goal-item::before{right:5px;}
+  .logo-text { font-size: 1.3rem; }
 }
 @media (max-width:480px){
+  .footer-grid{grid-template-columns:1fr;}
+  .hero-buttons{flex-direction:column;width:100%;}
+  .hero-buttons .btn{width:100%;justify-content:center;}
   .team-grid{grid-template-columns:1fr;}
 }
 </style>
@@ -302,14 +333,15 @@ footer{background:var(--surface);border-top:2px dashed var(--border);padding:60p
     
     <div class="nav-links" id="navLinks">
       <a href="#philosophy">فلسفتنا</a>
-      <a href="#journey">من وين بلشنا</a>
-      <a href="#principles">قوانين الفريق</a>
-      <a href="#goals">خططنا</a>
-      <a href="#team">مين نحن</a>
-      <a href="#contact" class="nav-cta">احكي معنا</a>
+      <a href="#journey">رحلتنا</a>
+      <a href="#principles">مبادئنا</a>
+      <a href="#goals">أهدافنا</a>
+      <a href="#portfolio">أعمالنا</a>
+      <a href="#team">الفريق</a>
+      <a href="#contact" class="nav-cta">انضم إلينا</a>
     </div>
     <button class="menu-btn" id="menuBtn" aria-label="القائمة">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
     </button>
   </div>
 </nav>
@@ -317,95 +349,178 @@ footer{background:var(--surface);border-top:2px dashed var(--border);padding:60p
 <section id="hero">
   <div class="container">
     <div class="hero-badge">
-      <span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--primary);"></span>
-     نحن لسنا مجرد أشخاص
-نحن فريق حقيقي
+      <span class="dot"></span>
+      فريق واحد.. نجاحنا مسؤولية الجميع
     </div>
     <h1 class="hero-title">
-       نحنا <span>لسنا مجرد أشخاص</span><br>
-      نحنا فريق.. وبيجمعنا هدف واحد
+      نحن <span class="text-primary">لسنا مجرد أشخاص</span><br>
+      نحن فريق حقيقي
     </h1>
     
     <p class="hero-desc">
-      <strong>مابدنا نطول عليك بالكلام المثالي.</strong> نحنا مجموعة طلاب ومبرمجين، ماعنا "رئيس" بيعطي أوامر، وماعنا "موظف" بس بنفذ. كلنا إيد وحدة. <br>
-      بنجرب، بنغلط، بنعيد الكود 3 و4 مرات، ومنتعلم من بعض. هدفنا نحول المعرفة اللي عالورق لشي حقيقي قدامك هلق.
+      يجمعنا هدف واحد، مآمنين بفكرة واحدة، ومستعدين نمشي مع بعضنا حتى نوصل لنتيجة مشتركة. ماعنا رئيس ومرؤوس، كلنا إيد وحدة وروح وحدة وقلب واحد.
     </p>
     
-    <div class="hero-supervisor">
-      بإشراف ومتابعة: المهندسة. سوسن صفصاف
+
+    <div class="hero-supervisor reveal">
+      بأشراف المهندسة القديرة: سوسن صفصاف
     </div>
 
     <div class="hero-buttons">
-      <a href="#philosophy" class="btn btn-primary">شو قصتنا</a>
-      <a href="#contact" class="btn btn-outline">بدك تنضم؟</a>
-
+      <a href="#philosophy" class="btn btn-primary">تعرّف علينا أكثر</a>
+      <a href="#contact" class="btn btn-outline">انضم إلينا</a>
+    </div>
   </div>
 </section>
 
 <section id="stats">
   <div class="stats-grid">
     <div class="stat">
-      <h3 data-count="22">0</h3>
-      <p>عضو (ولسا في مجال)</p>
+      <h3 data-count="21">0</h3>
+      <p>عضو في الفريق</p>
     </div>
     <div class="stat">
       <h3 data-count="8">0</h3>
-      <p>مبادئ متفقين عليها</p>
+      <p>مبادئ أساسية</p>
     </div>
     <div class="stat">
-      <h3 style="font-size: 1.8rem; margin-top: 8px;">∞</h3>
-      <p>قهوة وليل طويل</p>
+      <h3 data-count="100">0</h3>
+      <p>% التزام وشغف</p>
+    </div>
+    <div class="stat">
+      <h3 data-count="1">0</h3>
+      <p>هدف مشترك</p>
     </div>
   </div>
 </section>
 
 <section id="philosophy">
   <div class="container">
-    <h2 class="section-title reveal">شو يعني "فريق" بنظرنا؟</h2>
-    <p class="section-sub reveal">هل هو مجرد مجموعة أشخاص كل واحد بياخد مهمة وبخلص؟</p>
+    <h2 class="section-title reveal">شو يعني فريق؟</h2>
+    <p class="section-sub reveal">هل الفريق مجموعة أشخاص وكل شخص إله مهمة بنفذها وخلص؟</p>
     
     <div class="philosophy-content reveal">
-      <p><strong>طبعاً لا.</strong> هالغلطة كتير ناس بتوقع فيها. نحن عنا فكرة إنه الفريق هو "شخص واحد بأيادي كتير". لما عضو بيواجه مشكلة، الكل بيوقف معه، ولما بننجح، النجاح بيعود للكل.</p>
+      <p><strong>طبعاً الغالبية رح تقول لا.</strong> لهيك نحن فريق حقيقي بيجمعنا هدف واحد، مآمنين بفكرة واحدة، ومستعدين نمشي مع بعضنا حتى نوصل لنتيجة مشتركة.</p>
+      <p>منساعد بعض، منتعلم من بعض، ومنفرح لانجازات بعض.</p>
       
-      <div class="highlight-box wobbly-border">
-        <div class="handwritten">ملاحظة من الاجتماع الأول:</div>
-        <h3 style="margin-top: 10px;">ماعنا رئيس ومرؤوس</h3>
-        <p>ولا في حدا بيعطي أوامر والتاني بنفذ. كلنا منساعد بعض، ومنتعلم من بعض. القرارات بتتاخد بالنقاش، والاحترام فوق كل شي.</p>
+      <div class="highlight-box">
+        <h3>ماعنا رئيس ومرؤوس</h3>
+        <p>ولا عنا واحد بيعطي أوامر والتاني بنفذ. لا، كلنا إيد وحدة وروح وحدة وقلب واحد.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="journey" style="background: var(--surface);">
+<section id="journey">
   <div class="container">
-    <h2 class="section-title reveal">من وين بلشنا؟ وليش؟</h2>
-    <p class="section-sub reveal">نحن هون لانه شايفين فرصة وعنا رغبة نحول معرفتنا لشي حقيقي.</p>
+    <h2 class="section-title reveal">طيب ليش نحن هون؟</h2>
+    <p class="section-sub reveal">نحن هون لانه شايفين فرصة وعنا رغبة نحول معرفتنا وأفكارنا لشي حقيقي.</p>
 
-    <div class="philosophy-content reveal">
-      <p><strong>نحن مابدنا نبلش من القمة.</strong> أغلبنا طلاب، وماعندنا خبرة سوق العمل الحقيقية. هاد الشي مو عيب، بالعكس هو الدافع الأكبر إلنا.</p>
-      <p>الفرق بين شخص ناجح وشخص واقف مكانه، هو إنه الأول بجرب، بيغلط، وبيصحح. إحنا هون عشان نتعب سوا. عشان نضل نركد ورا الكود لآخر الليل.</p>
-      
-      <div style="text-align: center; margin: 40px 0;">
-        <span class="handwritten" style="font-size: 2rem; color: var(--secondary);">"نحن مبتدئين.. بس مارح نضل مبتدئين"</span>
+    <div class="journey-grid reveal">
+      <div class="journey-card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          من النظري للعملي
+        </h3>
+        <p>يمكن البعض درس البرمجة بالجامعة، ع الإنترنت، بعضنا عنده أفكار مشاريع، وبعضنا لسا عم يكتشف المجال.</p>
+        <p>بس الشي المشترك انه بدنا ننتقل من التعليم النظري الممل إلى روح الفريق والتطبيق العملي.</p>
       </div>
+      <div class="journey-card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4L12 14.01l-3-3"/></svg>
+          نبدأ من الصفر
+        </h3>
+        <p>أغلبنا طلاب وماعندنا خبرة عملية حقيقية في سوق العمل.  هاد الشي مو عائق، بالعكس هاد دافع النا.</p>
+        <p>مو عيب انه مانعرف نستخدم تقنية معينة أو نطلب مساعدة أو حتى نتعلم. كل الناس الناجحة بلشت من الصفر.</p>
+      </div>
+    </div>
 
-      <p>ممكن بالمستقبل نشتغل على مشروع أسابيع ونجي نغيره من الصفر، ممكن نمر بفترات مضغوطين بين الجامعة والشغل والحياة. <strong>بس مابدنا نترك المهمة.</strong> هاد هو الاتفاق بيننا.</p>
+    <div class="philosophy-content reveal" style="margin-top:40px;">
+      <p><strong>خلوها ببالكم: نحن مبتدئين بس مارح نضل مبتدئين.</strong></p>
+      <p>نحن عم نبني شي من الصفر. ممكن بالمستقبل نشتغل على مشروع أسابيع ويكون بده تغيير بالتصميم، ممكن نكتب كود ونعيده مرتين وتلاتة، ممكن نواجه مشاكل مانعرف نحلها، وممكن نمر بفترات مضغوطين بين جامعة وشغل ودراسة وحياة.</p>
+      <p>مابدنا نترك المهمة لانه واجهتنا مشكلة، ولا نفقد الحماس لانه ماشفنا نتايج سريعة. نصبر، نتعلم، نلتطور، ونلتزم بالمسؤوليات. إذا واجهنا مشاكل نحكي عنها بكل وضوح.</p>
     </div>
   </div>
 </section>
 
 <section id="principles">
   <div class="container">
-    <h2 class="section-title reveal">قوانين الفريق</h2>
-    <p class="section-sub reveal">اتفقنا عليها من أول يوم، وماشيين عليها</p>
+    <h2 class="section-title reveal">مبادئ الفريق</h2>
+    <p class="section-sub reveal">القيم اللي بتجمعنا وبتخلينا فريق حقيقي</p>
     
     <div class="principles-grid">
-      <div class="principle-card reveal"><h4>1. الاحترام أولاً</h4><p>مهما اختلفنا بالرأي، الاحترام بيضل موجود.</p></div>
-      <div class="principle-card reveal"><h4>2. الأخوة وروح الفريق</h4><p>فرحنا مشترك، ووجعنا مشترك.</p></div>
-      <div class="principle-card reveal"><h4>3. التواضع</h4><p>كلنا بنتعلم، ومحدا فينا "فاهم كل شي".</p></div>
-      <div class="principle-card reveal"><h4>4. الصراحة</h4><p>إذا في مشكلة، منحكيها ولكن، بدون زعل.</p></div>
-      <div class="principle-card reveal"><h4>5. تبادل المعرفة</h4><p>اللي بيعرفه حدا، لازم يعلمه للباقي.</p></div>
-      <div class="principle-card reveal"><h4>6. تقبل النقد</h4><p>نقد الكود تبعك مو نقد لشخصك.</p></div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+        <h4>الاحترام</h4>
+      </div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+        <h4>الاخوة وروح الفريق</h4>
+      </div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg></div>
+        <h4>التواضع</h4>
+      </div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+        <h4>الصراحة</h4>
+      </div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg></div>
+        <h4>التعاون وتبادل المعرفة</h4>
+      </div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-4"></path></svg></div>
+        <h4>تقبل النقد</h4>
+      </div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+        <h4>الأمانة</h4>
+      </div>
+      <div class="principle-card reveal">
+        <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div>
+        <h4>التطوير المستمر</h4>
+      </div>
+    </div>
+
+    <div class="philosophy-content reveal" style="margin-top:60px; text-align:center;">
+      <p>كل فكرة إلها قيمة عندنا بالفريق. مابدنا التفكير يكون محصور بشخص ولا شخصين. عندك فكرة، مشروع، تطبيق، نظام، خدمة؟ اطرحها. مشكلة؟ احكي فيها.</p>
+      <p><strong>احكي لا تتردد.</strong> ممكن تكون الفكرة بسيطة بس مع النقاش وإضافات بتصير رائعة.</p>
+    </div>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="container">
+    <h2 class="section-title reveal">أهداف الفريق</h2>
+    <p class="section-sub reveal">كل يوم منقرب خطوة</p>
+
+    <div class="goals-container reveal">
+      <div class="goal-item">
+        <h4>فريق متماسك ومنظم</h4>
+        <p>بناء أساس قوي من الثقة والتعاون بين جميع الأعضاء.</p>
+      </div>
+      <div class="goal-item">
+        <h4>تطوير مهاراتنا</h4>
+        <p>تحويل المعرفة النظرية إلى عملية وتطبيق حقيقي.</p>
+      </div>
+      <div class="goal-item">
+        <h4>تنفيذ أول مشاريعنا</h4>
+        <p>بالمستقبل القريب، تنفيذ أول مشاريعنا بجودة عالية.</p>
+      </div>
+      <div class="goal-item">
+        <h4>بناء معرض أعمال (Portfolio)</h4>
+        <p>بناء معرض أعمال خاص بالفريق يثبت قدراتنا وإمكانياتنا.</p>
+      </div>
+      <div class="goal-item">
+        <h4>الوصول للعملاء وبناء شركة</h4>
+        <p>هدفنا البعيد حصول على عملاء وبناء شركة كاملة بدأت مننا نحن الأساسات. إلها اسمها وسمعتها وخدماتها وتكون قادرة على المنافسة والتوسع.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box reveal" style="text-align:center; margin-top:50px; border-right:none; border:1px solid var(--border); border-radius:var(--radius);">
+      <h3>رحلتنا لسا ما بلشت</h3>
+      <p>مارح قول انه هاد كله بيوم واحد، لا. كل يوم منقرب خطوة. هدفنا البعيد شركة كاملة يكون إلها اسم ويكون لكل شخص أثر ومساهمة حقيقية. وإن شاء الله مستقبلاً منرجع منتذكر هاد الاجتماع ومنقول: <strong>نحن من هون بلشنا.</strong></p>
     </div>
   </div>
 </section>
@@ -444,45 +559,25 @@ footer{background:var(--surface);border-top:2px dashed var(--border);padding:60p
   </div>
 </section>
 
-<section id="goals" style="background: var(--surface);">
-  <div class="container">
-    <h2 class="section-title reveal">خططنا (كل يوم منقرب خطوة)</h2>
-    <div class="philosophy-content reveal">
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 20px; padding-right: 20px; border-right: 3px solid var(--accent);">
-          <h4 style="color: var(--text); margin-bottom: 5px;">1.فريق متماسك ومنظم</h4>
-          <p style="color: var(--muted); margin: 0; font-size: 0.95rem;"> بناء أساس قوي من الثقة والتعاون بين جميع الأعضاء..</p>
-        </li>
-        <li style="margin-bottom: 20px; padding-right: 20px; border-right: 3px solid var(--primary);">
-          <h4 style="color: var(--text); margin-bottom: 5px;">2. أول مشروع حقيقي</h4>
-          <p style="color: var(--muted); margin: 0; font-size: 0.95rem;">ننفذ مشروع كامل (من A لـ Z) ونعرضه بمعرض أعمالنا.</p>
-        </li>
-        <li style="margin-bottom: 20px; padding-right: 20px; border-right: 3px solid var(--secondary);">
-          <h4 style="color: var(--text); margin-bottom: 5px;">3.الوصول للعملاء وبناء شركة</h4>
-          <p style="color: var(--muted); margin: 0; font-size: 0.95rem;">هدفنا البعيد حصول على عملاء وبناء شركة كاملة بدأت مننا نحن الأساسات. إلها اسمها وسمعتها وخدماتها وتكون قادرة على المنافسة والتوسع.</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <section id="portfolio">
   <div class="container">
-    <h2 class="section-title reveal">أعمالنا (منطقة قيد الإنشاء)</h2>
-    <p class="section-sub reveal">نحن نعمل حالياً على تجهيز أول مشاريعنا بجودة عالية لعرضها هنا.</p>
+    <h2 class="section-title reveal">أعمالنا</h2>
+    <p class="section-sub reveal">مجموعة من المشاريع التي نفتخر بها</p>
     
     <div class="portfolio-empty reveal">
-      <h3>لسا في مجال..</h3>
-      <p>بنشتغل على أول مشروع إلنا هلق. أول ما نخلصه، رح ينزل هون. تابعونا!</p>
-      <div class="handwritten" style="margin-top: 15px; font-size: 1.2rem; color: var(--muted);">-- تحديث: قريباً جداً</div>
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <h3>قريباً...</h3>
+      <p>نحن نعمل حالياً على تجهيز أول مشاريعنا بجودة عالية لعرضها هنا. ترقبوا الجديد!</p>
     </div>
   </div>
 </section>
 
-<section id="team" style="background: var(--surface);">
+<section id="team">
   <div class="container">
-    <h2 class="section-title reveal">مين نحن؟ </h2>
-    <p class="section-sub reveal">نخبة من المبرمجين.. طلاب هندسة معلوماتية، متعلمين، وبشر عاديين</p>
+    <h2 class="section-title reveal">فريقنا</h2>
+    <p class="section-sub reveal">نخبة من المبرمجين يعملون بشغف</p>
     <div class="team-grid" id="teamGrid"><!-- سيتم توليده بالـ JS --></div>
   </div>
 </section>
@@ -490,34 +585,45 @@ footer{background:var(--surface);border-top:2px dashed var(--border);padding:60p
 <section id="contact">
   <div class="container contact-grid">
     <div class="contact-info reveal">
-      <h2>بدك تنضم للفريق؟ أو عندك فكرة؟</h2>
-      <p>بدي من كل واحد فيكم يفكر كتير منيح قبل ما يقرر. نحن مابنشتغل بالراحة، نحن بنشتغل بالشغف. إذا مستعد تلتزم وتتعلم، إحنا بانتظارك.</p>
+      <h2>بدي أكون جزء من الفريق!</h2>
+      <p>بدي من كل واحد فيكم يفكر كتير منيح قبل ما يقرر يكون جزء من الفريق. مو لان الطريق طويل أو مستحيل، لا. لازم نلتزم ونتطور.</p>
       
+      <p style="margin-bottom:32px; font-weight:700; color:var(--text);">مستعد تلتزم؟ تصبر؟ تشارك أفكارك؟ تساعدنا نحن أعضاء الفريق؟ وإذا ماعندك خبرة ف كلنا ماعندنا خبرة!</p>
+
       <div class="contact-item">
         <div class="contact-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </div>
         <div>
-          <h5 style="color: var(--muted); font-size: 0.8rem;">البريد الإلكتروني</h5>
-          <p style="font-weight: 700;">nextbit.team@gmail.com</p>
+          <h5>البريد الإلكتروني</h5>
+          <p>nextbit.team</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+        <div>
+          <h5>الهاتف / واتساب</h5>
+          <p>0000000000</p>
         </div>
       </div>
     </div>
 
     <form class="contact-form reveal" id="contactForm">
       <div class="form-group">
-        <label for="name">اسمك الكامل</label>
-        <input type="text" id="name" required placeholder="">
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" required placeholder="اسمك">
       </div>
       <div class="form-group">
-        <label for="email">إيميلك</label>
-        <input type="email" id="email" required placeholder="">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" required placeholder="you@example.com">
       </div>
       <div class="form-group">
-        <label for="message">احكيلنا شو بتقدر تضيف؟</label>
-        <textarea id="message" required placeholder="كل فكرة إلها قيمة عندنا.. لا تتردد"></textarea>
+        <label for="message">شو بتقدر تضيف للفريق؟</label>
+        <textarea id="message" required placeholder="احكي لا تتردد.. كل فكرة إلها قيمة"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">أرسل الطلب</button>
+      <button type="submit" class="btn btn-primary">أرسل طلب الانضمام</button>
     </form>
   </div>
 </section>
@@ -530,12 +636,16 @@ footer{background:var(--surface);border-top:2px dashed var(--border);padding:60p
         <div class="logo-sub">TEAM</div>
       </a>
       <p>خلونا نكون سند لبعض، نكبر مع بعض، نتعلم مع بعض. فريق واحد نجاحنا مسؤولية الجميع.</p>
+      <div class="footer-socials">
+
+      </div>
     </div>
     <div class="footer-col">
       <h4>روابط سريعة</h4>
       <a href="#philosophy">فلسفتنا</a>
       <a href="#journey">رحلتنا</a>
-      <a href="#goals">خططنا</a>
+      <a href="#principles">مبادئنا</a>
+      <a href="#goals">أهدافنا</a>
     </div>
     <div class="footer-col">
       <h4>تواصل</h4>
@@ -544,16 +654,15 @@ footer{background:var(--surface);border-top:2px dashed var(--border);padding:60p
     </div>
   </div>
   <div class="footer-bottom">
-    © <span id="year"></span> NEXT Bit TEAM — بالبداية والنهاية، شكراً لكل شخص اختار يكون جزء من البداية 🤍
+    © <span id="year"></span> NEXT Bit TEAM — بالنهاية شكراً لكل شخص اختار يكون جزء من البداية
   </div>
 </footer>
 
 <button id="to-top" aria-label="العودة للأعلى">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
 </button>
 
 <script>
-// بيانات الفريق
 const team = [
   { name:'محمد الشب',          role:'IT Engineer', color:'#e07a5f' },
   { name:'احمد ربيع الشب',     role:'IT Engineer', color:'#81b29a' },
@@ -583,48 +692,43 @@ const teamGrid = document.getElementById('teamGrid');
 team.forEach(m => {
   const card = document.createElement('div');
   card.className = 'member reveal';
-  // نستخدم لون الخلفية المؤقت كصورة (هنا ممكن تحط روابط صور حقيقية لاحقاً)
   card.innerHTML = `
-    <div class="avatar" style="background:${m.color}30;"></div>
+    <div class="avatar" style="background:${m.color}"></div>
     <h4>${m.name}</h4>
     <div class="role">${m.role}</div>
   `;
   teamGrid.appendChild(card);
 });
 
-// السنة الحالية
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// قائمة الموبايل
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
 menuBtn.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+  });
+});
 
-// زر العودة للأعلى
 const toTop = document.getElementById('to-top');
 window.addEventListener('scroll', () => {
   toTop.classList.toggle('show', window.scrollY > 400);
 });
 toTop.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
 
-// 🌟 حركة الظهور البشرية (تأخير عشوائي)
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // تأخير عشوائي بين 100ms و 400ms عشان ما تطلع كل الكروت مع بعض بنفس الملي ثانية
-      const randomDelay = Math.floor(Math.random() * 300) + 100;
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, randomDelay);
+      entry.target.classList.add('visible');
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// العدادات
 const counters = document.querySelectorAll('.stat h3[data-count]');
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -632,18 +736,19 @@ const counterObserver = new IntersectionObserver((entries) => {
     const el = entry.target;
     const target = +el.dataset.count;
     let current = 0;
-    const step = Math.max(1, Math.ceil(target / 40));
+    const step = Math.max(1, Math.ceil(target / 60));
     const timer = setInterval(() => {
       current += step;
       if (current >= target) { current = target; clearInterval(timer); }
-      el.textContent = current;
-    }, 30);
+      
+      el.textContent = current + (target === 21 ? '+' : ''); 
+      
+    }, 25);
     counterObserver.unobserve(el);
   });
 }, { threshold: 0.5 });
 counters.forEach(c => counterObserver.observe(c));
 
-// نموذج التواصل
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
   const name = document.getElementById('name').value;
